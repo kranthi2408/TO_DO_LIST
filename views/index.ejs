@@ -1,0 +1,121 @@
+
+
+
+<html>
+    <head>
+      <style>
+        body{
+          background-color:#B2B2B2;
+        }
+  
+        .tut{
+          background-color:black;
+          height:40px;
+          width:200px;
+          color:white;
+          text-align:justify;
+          font-family: 'Courier New', monospace;
+          font-size:15px;
+          margin:auto;
+          margin-top:30px;
+  
+        }
+        .content{
+          background-color:#372948;
+          height:500px;
+          width:500px;
+          margin-top:50px;
+          margin-left:220px;
+          border-radius:50px;
+          color:white;
+          font-size:25px;
+          text-decoration:none;
+          line-heigth:5px;
+          padding-top:10px;
+          text-align:justify;
+          float:left;
+          overflow:scroll;
+  
+          l
+  
+  
+  
+        }
+        .content li{
+          list-style-type:none;
+          padding-top:10px;
+  
+        }
+        .entering{
+          background-color:rgb(79, 170, 149);
+          height:300px;
+          width:400px;
+          float:left;
+           margin-top:130px;
+          border-radius:50px;
+          margin-left:100px;
+  
+  
+        }
+        .main{
+          float:left;
+        }
+        .in{
+          heigth:500px;
+          width:200px;
+          margin-top:100px;
+          margin-left:100px;
+  
+          border:none;
+          border-bottom:3px solid black;
+          font-size:25px;
+          letter-spacing:5px;
+   font-family: "Times New Roman", Times, serif;
+        }
+        button{
+          background-color:#3E6D9C;
+          heigth:100px;
+          width:100px;
+          margin-top:20px;
+          margin-left:150px;
+          border:none;
+          border-radius:30px;
+          font-size:20px;
+          letter-spacing:5px;
+  
+  
+  
+        }
+      </style>
+    </head>
+    <body>
+      <div class="tut">
+        <h1>TO-DO-LIST</h1>
+      </div>
+      <div class="main">
+      <div class="content">
+        <ul>
+  
+  
+        <%  for(var i=0;i<listitem.length;i++){ %>
+  
+  
+        <li><%= listitem[i].item %> </li>
+    <%  } %>
+  
+  
+  
+    </ul>
+      </div>
+      <div class="entering">
+          <form class="" action="/" method="post">
+        <input class="in" type="text" name="enteredvalue"  placeholder="enter value" value="">
+            <br>
+        <button type="submit" name="button">submit</button>
+      </form>
+      </div>
+      </div>
+      </div>
+    </body>
+  </html>
+  
